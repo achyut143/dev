@@ -725,10 +725,12 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  *   '^.+\.example\.org$',
  * );
  * @endcode
+
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
-
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = 'sites/default/custom-sync';
 /**
  * The default list of directories that will be ignored by Drupal's file API.
  *
